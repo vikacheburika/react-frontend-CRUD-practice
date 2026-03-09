@@ -1,0 +1,10 @@
+article {
+    border: solid black 1px;
+    margin: 6px;
+    padding: 0 10px;
+    border-radius: 4px;
+    box-shadow: -1px 0px 19px -1px rgba(242,211,95,0.75);
+}
+h3 {
+    text-align: center;
+}

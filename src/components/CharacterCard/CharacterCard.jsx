@@ -1,7 +1,9 @@
 import "./CharacterCard.css";
 import Button from "react-bootstrap/Button";
 
-const CharacterCard = (props) => {
+function CharacterCard({props, onEdit}) {
+  
+
   return (
     <>
       <article>
@@ -10,16 +12,7 @@ const CharacterCard = (props) => {
         <p>Name: {props.name}</p>
         <p>Age: {props.age}</p>
         <p>Job: {props.job}</p>
-        <div className="container">
-          <div className="row">
-            <Button variant="light">
-              Edit
-            </Button>
-            <Button variant="dark">
-              Delete
-            </Button>
-          </div>
-        </div>
+        <button onClick={()=>onEdit(props)}></button>
       </article>
     </>
   );
